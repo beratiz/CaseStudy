@@ -1,0 +1,34 @@
+name: UI tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  cucumber-tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chrome-headless]
+    defaults:
+      run:
+        working-directory: AppsfactoryChallenge_1
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+          cache-dependency-path: AppsfactoryChallenge_1/pom.xml
+
+      - name: Select browser (${{ matrix.browser }})
+        run: sed -i "s/^browser=.*/browser=${{ matrix.browser }}/" configuration.properties
+
+      - name: Run Cucumber tests (${{ matrix.browser }})
+        run: mvn --batch-mode --no-transfer-progress clean test

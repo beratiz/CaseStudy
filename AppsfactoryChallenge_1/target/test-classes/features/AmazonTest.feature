@@ -23,10 +23,10 @@ Feature: Setting up a WebApp project that executes the following features of Ama
     Given As a new Amazon user, I am on the Amazon home page
 
   Scenario: Set Up a Web Testing Project for Chrome that executes the following Test Case
-    Given I search products and add the cheapest one to Einkaufswagen
-      | Snickers |
-      | Skittles |
-    And I navigate to Einkaufswagen
+    Given I search products and add the cheapest one to basket
+      | snickers |
+      | skittles |
+    And I navigate to basket
     Then verify that basket calculates the result correctly
     And I navigate to checkout
     Then verify that user gets redirected to registration page

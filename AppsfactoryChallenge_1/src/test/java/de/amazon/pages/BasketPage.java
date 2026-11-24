@@ -9,6 +9,7 @@ import java.text.DecimalFormat;
 import java.util.List;
 
 public class BasketPage {
+
     public BasketPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
@@ -17,9 +18,9 @@ public class BasketPage {
     public WebElement amountOfBasket;
 
     @FindBy(name = "proceedToRetailCheckout")
-    public WebElement zurKasseGehenButton;
+    public WebElement toCheckoutButton;
 
-    @FindBy(className = "sc-product-price")
+    @FindBy(css = ".a-price.apex-price-to-pay-value .a-offscreen")
     public List<WebElement> basketProductPrices;
 
     /**
@@ -37,10 +38,13 @@ public class BasketPage {
     public String calculateBasketResult() {
         double sum = 0;
         for (WebElement price : basketProductPrices) {
-            double temp= convertToDouble(price.getText());
+          //  log.info(price.getText());
+            String priceText = price.getDomProperty("textContent");
+            double temp= convertToDouble(priceText);
             sum+=temp;
         }
-        return String.valueOf(sum);
+        //sum of two doubles may not be right, because of that we round it
+        return String.valueOf(Math.round(sum * 100.0) / 100.0);
     }
 
     /**

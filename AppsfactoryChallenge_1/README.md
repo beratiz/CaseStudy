@@ -38,13 +38,13 @@ WebDriverManager supports an Automatic Selenium WebDriver binaries management in
 ## Pre-requestes
 You need to have these installations on your pc before to run the project and develop further;
 
-- [Java JDK 11](https://www.oracle.com/de/java/technologies/javase-jdk11-downloads.html)
+- [Java JDK 21](https://www.oracle.com/de/java/technologies/javase-jdk11-downloads.html)
 - [Maven](https://maven.apache.org/install.html)
-- [IntelliJ IDEA (2020.3 or later)](https://www.jetbrains.com/idea/)
+- [IntelliJ IDEA (2026.3 or later)](https://www.jetbrains.com/idea/)
 - [Cucumber for Java](https://plugins.jetbrains.com/plugin/7212-cucumber-for-java) and [Gherkin](https://plugins.jetbrains.com/plugin/9164-gherkin) plugins should be installed on IntelliJ IDEA
 - [Chrome browser](https://www.google.com/chrome/)
 
-Or, you can easily run the project using commond promt(terminal) having Java JDK 11 and Maven.
+Or, you can easily run the project using commond promt(terminal) having Java JDK 21 and Maven.
 
 ## How to clone the Project
 After all the installations which are given under the title Pre-requestes, follow these steps to clone the project from GitHub to your local computer;

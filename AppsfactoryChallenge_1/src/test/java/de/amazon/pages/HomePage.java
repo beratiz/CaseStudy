@@ -15,10 +15,10 @@ public class HomePage {
     public WebElement searchTextBox;
 
     @FindBy(id="sp-cc-accept")
-    public WebElement cookiesAkzeptierenButton;
+    public WebElement cookiesAcceptButton;
 
-    @FindBy(id="nav-cart-text-container")
-    public WebElement menuEinKaufswagenButton;
+    @FindBy(id="nav-cart")
+    public WebElement menuBasket;
 
     /**
      * Search a product

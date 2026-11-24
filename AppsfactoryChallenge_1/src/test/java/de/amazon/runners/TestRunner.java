@@ -1,10 +1,7 @@
 package de.amazon.runners;
 
-
-import de.amazon.utilities.Driver;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import org.junit.After;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
