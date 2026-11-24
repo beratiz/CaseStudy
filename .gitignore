@@ -1,0 +1,16 @@
+# Java / Maven
+**/target/
+*.class
+
+# Node / TypeScript
+**/node_modules/
+**/dist/
+**/playwright-report/
+**/test-results/
+
+# IDE
+.idea/
+.vscode/
+
+# Environment
+.env

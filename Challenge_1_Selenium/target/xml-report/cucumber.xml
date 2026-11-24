@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.225">
-    <testcase classname="Setting up a WebApp project that executes the following features of Amazon website" name="Set Up a Web Testing Project for Chrome that executes the following Test Case" time="10.138">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.806">
+    <testcase classname="Setting up a WebApp project that executes the following features of Amazon website" name="Set Up a Web Testing Project for Chrome that executes the following Test Case" time="28.705">
         <system-out><![CDATA[Given As a new Amazon user, I am on the Amazon home page....................passed
 Given I search products and add the cheapest one to basket..................passed
 And I navigate to basket....................................................passed
