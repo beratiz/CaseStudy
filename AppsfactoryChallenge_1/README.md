@@ -74,17 +74,14 @@ Go to your project directory from terminal and hit following command
 or
 
 > mvn test
+
+To run the tests in headless mode, change the browser variable in configuration.properties to chrome-headless.
+
 ### Second way:
 Run Test by using TestRunner class where is `/src/test/java/de/amazon/runners/TestRunner.java`
 ## Getting Report
 You will find the report `/target/default-cucumber-reports/cucumber.html` and can open `cucumber.html` file with any browser and see the report of test execution. You will also see a screenshot for any failed steps.
 
-Secondly, you will also get as a result of test execution a Cucumber Report link which you can see the test report on Cucumber Report Service.
-
-Like;
-
->View your Cucumber Report at: <br>
-`https://reports.cucumber.io/reports/47042ec2-7641-4b04-84b8-8d35cb35db1b`
 
 
 

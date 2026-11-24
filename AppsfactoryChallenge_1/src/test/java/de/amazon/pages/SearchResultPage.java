@@ -18,10 +18,8 @@ public class SearchResultPage {
     @FindBy(xpath = "//*[@data-component-type=\"s-search-result\"]//img")
     public WebElement firstProductOfSearchResult;
 
-
     @FindBy(name = "submit.addToCart")
     public WebElement addToCheapestOne;
-
 
     /**
      *Adds the cheapest product to cart
